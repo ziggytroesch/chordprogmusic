@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Composition Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎼 Music Composition Tool</h1>
+
+        <div class="input-group">
+            <label for="mood">Mood :</label>
+            <select id="mood">
+                <option value="">Tous</option><option>Joie / Lumière</option><option>Nostalgie / Mélancolie</option><option>Tristesse / Drame</option><option>Tension / Mystère</option><option>Héroïque / Épique</option><option>Romance / Intimiste</option><option>Sombre / Angoisse</option></select>
+        </div>
+
+        <div class="input-group">
+            <label for="genre">Genre :</label>
+            <select id="genre">
+                <option value="">Tous</option><option>Pop Française</option><option>House Française</option><option>Hip-Hop Français</option><option>Dream Pop</option><option>Rock Classique</option><option>Pop Française Indie</option><option>Rock Psychédélique</option><option>Folk</option><option>Acid Rock</option><option>Indie</option><option>Art Rock</option><option>Folk Rock</option><option>Rock</option><option>Alternative Rock</option><option>Soft Rock</option><option>Modern Rock</option><option>Album Rock</option><option>Alternative Metal</option><option>Hard Rock</option><option>Post-Grunge</option><option>Pop Rock</option><option>Permanent Wave</option><option>Nu Metal</option><option>Rock En Espanol</option><option>Latin Rock</option><option>Indietronica</option><option>Pop Punk</option><option>Indie Rock</option><option>Country Rock</option><option>Yacht Rock</option><option>Indie Pop</option><option>J-Rock</option><option>Emo</option><option>Indie Folk</option><option>Modern Alternative Rock</option><option>Glam Metal</option><option>Indonesian Indie</option><option>Classical / Spanish / World Guitar</option></select>
+        </div>
+
+        <div class="input-group">
+            <label for="artist">Artiste / Groupe :</label>
+            <select id="artist">
+                <option value="">Tous</option><option>Odezenne</option><option>Beach House</option><option>Fontaines D.C.</option><option>Fred again..</option><option>David Bowie</option><option>The Strokes</option><option>Peter Cat Recording Co.</option><option>Arctic Monkeys</option><option>Lomepal</option><option>King Krule</option><option>Ryder The Eagle</option><option>La Femme</option><option>Papooz</option><option>The Beatles</option><option>Alpha Wann</option><option>Pink Floyd</option><option>Mac DeMarco</option><option>Overmono</option><option>Bob Dylan</option><option>Damso</option><option>Led Zeppelin</option><option>Brad stank</option><option>Yellow Days</option><option>Feu! Chatterton</option><option>Max Richter</option><option>The Velvet Underground</option><option>Air</option><option>Kanye West</option><option>The Rolling Stones</option><option>The Blaze</option><option>Fauve</option><option>B Fachada</option><option>Jimi Hendrix</option><option>Disiz</option><option>Contrefaçon</option><option>The Limiñanas</option><option>Freeze corleone</option><option>Sofiane Pamart</option><option>Mac Miller</option><option>Donna Blue</option><option>Serge Gainsbourg</option><option>BB Brunes</option><option>Jim Morrison</option><option>jean</option><option>alt-J</option><option>Belle Chen</option><option>070 Shake</option><option>Hermanos Gutiérrez</option><option>Alexandre Tharaud</option><option>Radiohead</option></select>
+        </div>
+
+        <div class="input-group">
+            <label for="key">Clé (tonalité) :</label>
+            <select id="key">
+                <option value="">C (par défaut)</option><option>C</option><option>C#</option><option>D</option><option>D#</option><option>E</option><option>F</option><option>F#</option><option>G</option><option>G#</option><option>A</option><option>A#</option><option>B</option><option>Cm</option><option>C#m</option><option>Dm</option><option>D#m</option><option>Em</option><option>Fm</option><option>F#m</option><option>Gm</option><option>G#m</option><option>Am</option><option>A#m</option><option>Bm</option></select>
+        </div>
+
+        <button onclick="generate()">🎹 Générer 20 progressions</button>
+
+        <div class="results">
+            <h3>Résultats :</h3>
+            <ul id="results"></ul>
+        </div>
+    </div>
+
+    <script src="data/data.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
